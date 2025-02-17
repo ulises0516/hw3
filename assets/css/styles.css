@@ -128,7 +128,7 @@ main section {
 }
 
 section:has(aside) aside img {
-  outline: 2px dashed #ccc;
+  outline: 2px solid #ccc;
   outline-offset: 0.3rem;
 }
 
