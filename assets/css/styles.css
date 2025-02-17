@@ -56,7 +56,7 @@ body {
 header {
   width: 100%;
   background-color: var(--header-background);
-  border-bottom: 1px solid #d3d0d0;
+  border-bottom: 1px solid #ccc;
 }
 
 header .header-container {
@@ -115,7 +115,7 @@ h3 cite {
 }
 
 main section {
-  border-bottom: 1px solid #d3d0d0;
+  border-bottom: 1px solid #ddd;
 }
 
 
@@ -268,9 +268,8 @@ figure {
 
 footer {
   text-align: center;
-  border-top: 1px solid #d3d0d0;
+  border-top: 1px solid #ccc;
   padding: 1.5rem 1rem;
-
   address {
     a {
       margin: 0 0.3125rem; 
@@ -282,17 +281,14 @@ footer {
       }
     }
   }
-
-  .contact-icons {
-    img {
-      width: 24px;
-      height: 24px;
-      margin: 0 0.5rem;
-      vertical-align: middle;
-    }
-  }
 }
-
+.contact-icons img,
+cite a img {
+  width: 24px;
+  height: 24px;
+  margin: 0 0.5rem;
+  vertical-align: middle;
+}
 
 .responsive-img {
   width: 100%;
