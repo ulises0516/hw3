@@ -127,8 +127,8 @@ main section {
 
 }
 
-section:has(aside) aside img {
-  outline: 2px solid #ccc;
+section:has(aside) img:not([alt*="View Project on GitHub"]) {
+  outline: 2px solid #cac8c8;
   outline-offset: 0.3rem;
 }
 
@@ -257,8 +257,6 @@ figure {
 }
 
 #portfolio aside img {
-  outline: 2px dashed #ccc;
-  outline-offset: 0.5rem;
   max-width: 100%;
   border-radius: 8px;
   transition: transform 0.3s ease-in-out;
