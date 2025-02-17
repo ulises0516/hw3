@@ -77,10 +77,14 @@ header .header-container {
   margin: 0; 
 }
 .main-nav {
+  flex: 1; 
+  display: flex;
+  justify-content: center; 
   ul {
     list-style: none;
+    justify-content: center; 
     display: flex;  
-    gap: 1rem;     
+    gap: 3rem;     
     margin: 0;
     padding: 0;
   }
@@ -96,7 +100,6 @@ header .header-container {
     /*color: #014996;*/
     color: color-mix(in srgb, #0065ca, #014996 50%);
   }
-
 }
 
 
@@ -268,7 +271,7 @@ figure {
 footer {
   text-align: center;
   border-top: 1px solid #ccc;
-  padding: 3.25rem 2rem;
+  padding: 1.5rem 1rem;
 }
 .contact-icons img,
 cite a img {
