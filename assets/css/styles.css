@@ -128,8 +128,7 @@ main section {
 }
 
 section:has(aside) img:not([alt*="View Project on GitHub"]) {
-  outline: 2px solid #cac8c8;
-  outline-offset: 0.3rem;
+  outline: 1px solid #909090;
 }
 
 #about-me .two-column {
@@ -216,6 +215,44 @@ figure {
   border: 0;
 }
 
+.slider-container {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 100%;
+}
+
+.slide {
+  min-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  z-index: 2;
+}
+
+.slider-btn:focus {
+  outline: none;
+}
+
 
 #portfolio {
   min-height: 60vh; 
@@ -224,15 +261,7 @@ figure {
   margin: 0;
 }
 
-#portfolio .two-column {
-  max-width: 1000px;      
-  margin: 0 auto;         
-  display: flex;
-  flex-wrap: wrap;        
-  gap: 2rem;              
-  align-items: center;    
-  justify-content: center;
-}
+
 
 #portfolio article {
   flex: 1 1 400px;  
@@ -259,12 +288,8 @@ figure {
 #portfolio aside img {
   max-width: 100%;
   border-radius: 8px;
-  transition: transform 0.3s ease-in-out;
 }
 
-#portfolio aside img:hover {
-  transform: scale(1.03) rotate(1deg);
-}
 
 footer {
   text-align: center;
@@ -277,7 +302,7 @@ footer {
       text-decoration: none;
 
       &:hover {
-        background-color: rgba(0, 102, 204, 0.1); /* Light blue highlight */
+        background-color: rgba(0, 102, 204, 0.1); 
         border-radius: 6px;
         padding: 0.10rem;
       }
