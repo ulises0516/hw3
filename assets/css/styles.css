@@ -240,18 +240,33 @@ figure {
 
 }
 
+.slider-wrapper {
+  max-width: 1000px;
+  margin: 10px auto 0;
+}
+
+.slider-controls {
+  display: flex;
+  justify-content: space-between;  /* One button on each side */
+  margin-top: 1rem;                /* Space above the buttons */
+}
 
 .slider-btn {
-  background-color: transparent;
+  background-color: #257CFF;
+  color: #fff;
   border: none;
-  font-size: 2rem;
+  border-radius: 10px;
+  font-size: 1rem;
   cursor: pointer;
-  padding: 0.5rem;
-  z-index: 2;
+  padding: 0.5rem 1rem;
+}
+
+.slider-btn:hover {
+  background-color: #1f66d1;
 }
 
 .slider-btn:focus {
-  outline: none;
+  outline-offset: 2px;
 }
 
 
