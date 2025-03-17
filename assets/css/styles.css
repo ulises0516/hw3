@@ -127,9 +127,7 @@ main section {
 
 }
 
-section:has(aside) img:not([alt*="View Project on GitHub"]) {
-  outline: 1px solid #909090;
-}
+
 
 #about-me .two-column {
   max-width: 1000px;      
@@ -221,15 +219,16 @@ figure {
   margin: 0 auto;
   margin-top: 10px;
   overflow: hidden;
-  display: flex;
-  align-items: center;
+
 }
 
 .slider {
   display: flex;
   transition: transform 0.5s ease;
   width: 100%;
+
 }
+
 
 .slide {
   min-width: 100%;
@@ -238,7 +237,9 @@ figure {
   gap: 2rem;
   align-items: center;
   justify-content: center;
+
 }
+
 
 .slider-btn {
   background-color: transparent;

@@ -117,25 +117,28 @@
               </figure>
             </aside>
           </div>
-          
+
           <div class="slide">
             <article>
-              <h3>
-                Project 2 
-                <cite>
-                  <a href="https://github.com/example2" target="_blank" rel="noopener">
-                    <img src="assets/images/github-icon.jpg" alt="GitHub Icon" />
-                  </a>
-                </cite>
-              </h3>
-              <p>Sample project description for Project 2.</p>
+              <h3>ExPub Software<cite> 
+                <a href="https://github.com/CSES-Dev/webclicker-plusplus" target="_blank" rel="noopener">
+                </a>
+              </cite> 
+            </h3>
+              <p>Collaborated with a cross-functional team to develop a Python tool for research paper identification using CAIDA datasets </p>
+              <p>Reduced metadata collection time by 30% through web scraping.</p>
+              <blockquote>
+                <p>Simplifying curation</p>
+              </blockquote>
             </article>
+        
+            <!-- right column -img -->
             <aside>
               <figure>
                 <picture>
-                  <source srcset="assets/images/project2.webp" type="image/webp">
-                  <source srcset="assets/images/project2.jpg" type="image/jpeg">
-                  <img src="assets/images/project2.jpg" alt="Project 2 Image" class="responsive-img">
+                  <source srcset="assets/images/caida-img.webp" type="image/webp">
+                  <source srcset="assets/images/caida-img.jpg" type="image/jpeg">
+                  <img src="assets/images/caida-img.jpg" alt="Image of Project" class="responsive-img">
                 </picture>
               </figure>
             </aside>
@@ -176,5 +179,28 @@
     </section>
     <p>&copy; 2024 Ulises Blog</p>
   </footer>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const slider = document.querySelector('.slider');
+      const slides = document.querySelectorAll('.slide');
+      const prevButton = document.querySelector('.slider-btn.prev');
+      const nextButton = document.querySelector('.slider-btn.next');
+      let currentIndex = 0;
+  
+      function updateSlider() {
+        slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+      }
+  
+      prevButton.addEventListener('click', function() {
+        currentIndex = (currentIndex > 0) ? currentIndex - 1 : slides.length - 1;
+        updateSlider();
+      });
+  
+      nextButton.addEventListener('click', function() {
+        currentIndex = (currentIndex < slides.length - 1) ? currentIndex + 1 : 0;
+        updateSlider();
+      });
+    });
+  </script>
 </body>
 </html>
