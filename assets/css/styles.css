@@ -277,7 +277,9 @@ footer {
       text-decoration: none;
 
       &:hover {
-        text-decoration: underline;
+        background-color: rgba(0, 102, 204, 0.1); /* Light blue highlight */
+        border-radius: 6px;
+        padding: 0.10rem;
       }
     }
   }
